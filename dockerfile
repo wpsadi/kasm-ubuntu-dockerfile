@@ -7,7 +7,7 @@ ENV VNC_PW=password
 CMD ["--shm-size=512m"]
 
 # Expose port 6901
-EXPOSE 6901
+EXPOSE 80
 
 # Start the container with interactive terminal
-CMD ["--rm", "-it", "-p", "6901:6901"]
+CMD ["--rm", "-it", "-p", "80:6901"]
